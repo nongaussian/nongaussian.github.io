@@ -497,7 +497,7 @@ hr{ height:1px; width:80%; border:0; background-color:#aeaeae; margin:20px auto 
 
 .memberpic{
 	display:inline-block;
-	width:80%;
+	width:55%;
 	padding:5px;
 	background-color:#ffffff;
 	max-width:420px;
@@ -649,7 +649,7 @@ hr{ height:1px; width:80%; border:0; background-color:#aeaeae; margin:20px auto 
 
 .keyleft2, .subctn .keyleft2{
 	display:inline-block;
-	width:100%;
+	width:90%;
 	text-align:center;
 	font-size:12px;
 	margin-left:20px;
