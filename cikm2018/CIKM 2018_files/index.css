@@ -641,7 +641,18 @@ hr{ height:1px; width:80%; border:0; background-color:#aeaeae; margin:20px auto 
 	width:30%;
 	text-align:center;
 	font-size:12px;
-	margin-right:2%;
+	margin-left:20px;
+	padding:6px;
+	color:#ffffff;
+	background-color:#cc3c17;
+}
+
+.keyleft2, .subctn .keyleft2{
+	display:inline-block;
+	width:100%;
+	text-align:center;
+	font-size:12px;
+	margin-left:20px;
 	padding:6px;
 	color:#ffffff;
 	background-color:#cc3c17;
@@ -1434,7 +1445,7 @@ h4.hpspeaker{
 	}
 	
 	.keyrightctn{
-		height:50px;
+		height:30px;
 	}
 	.hpkeydates{
 		width:30%;
