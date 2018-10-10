@@ -22,7 +22,7 @@
 			$('#fullpage').fullpage({
 				'navigation': true,
 				'navigationPosition': 'right',
-				'navigationTooltips': ['Index', 'News', 'Welcome', 'Members', 'Organizers', 'Sponsors', 'Contact'],
+				'navigationTooltips': ['Index', 'Introduction', 'Publication', 'Members', 'Organizers', 'Photos', 'Contact'],
 				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage', '6thpage', 'lastPage'],
 				menu: '#menu',
 				scrollOverflow: true,
@@ -75,17 +75,20 @@
         <ul>
           <li><a href="#">Home</a>
             <ul>
-              <li><a href="#secondPage" onclick="closeNav()">News</a></li>
-              <li><a href="#3rdPage" onclick="closeNav()">Welcome
-                  Message</a></li>
+              <li><a href="#secondPage" onclick="closeNav()">Introduction</a></li>
+              <li><a href="#3rdPage" onclick="closeNav()">Publication</a></li>
               <li><a href="#4thpage" onclick="closeNav()">Members</a></li>
-              <li><a href="#5thpage" onclick="closeNav()">Organizing
-                  &amp; Supporting <br />
-                  Institutions</a></li>
-              <li><a href="#6thpage" onclick="closeNav()">Sponsors</a></li>
+              <li><a href="#5thpage" onclick="closeNav()">Projects</a></li>
+              <li><a href="#6thpage" onclick="closeNav()">Photos</a></li>
             </ul>
           </li>
-          <li class="title">Organizers <ul> <li><a href="organizingcommittee.html">Organizing Committee</a></li> </ul></li>
+          <li class="title">Organizations
+			  <ul>
+				 <li><a href="http://sw.hanyang.ac.kr/">Division of Computer Science</a></li>
+				 <li><a href="http://computing.hanyang.ac.kr/">College of Computing</a></li>
+				 <li><a href="http://www.hanyang.ac.kr/">Hanyang University</a></li>
+			  </ul>
+		  </li>
           <li>Venue
             <ul>
               <li><a href="http://www.centrocongressilingotto.it/EN/Pages/Home.aspx"
@@ -104,50 +107,62 @@
           <div class="padding">
             <h1>Big Data Mining Research Group</h1>
             <div class="hpcol hpcol5">
-              <h3>CIKM 2018 International Conference on Information and
-                Knowledge Management</h3>
+				<h3>Colllege of Computing,<br/> Hanyang University at Ansan</h3>
+			<!--
               <div class="box yellow">22 - 26 October 2018</div>
               <a href="http://www.centrocongressilingotto.it/EN/Pages/Home.aspx"
                 target="_blank">
                 <div class="box red">Lingotto, Turin, Italy</div>                                
-              </a> </div>
-              <br>
+			  </a> -->
+			</div>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+			<!--
               <a href="CIKM2018AnalytiCup.html"
                 target="_blank">
-                <div class="box red">CIKM 2018 AnalytiCup call for
-                    proposals</div>
+                <div class="box red">CIKM 2018 AnalytiCup call for proposals</div>
               <br>
-              <a href="sponsorship.html"
-                target="_blank">
-                <div class="box red">CIKM 2018 call for
+              <a href="sponsorship.html" target="_blank"> 
+			  <div class="box red">CIKM 2018 call for
                     sponsorships and exhibitions</div>
               <br>
-            <div class="clearboth"></div>
+              <div class="clearboth"></div>
+			-->
           </div>
           <div class="hpfooter">
             <div class="padding">
               <div class="left">
+				<!--
                 <div class="col">
                   <div class="title">organised by</div>
-                  <a href="https://www.units.it/" target="_blank" title="UNITS"><img
-
-                      src="images/logo-units.png" /></a> </div>
+                  <a href="https://www.units.it/" target="_blank" title="UNITS"><img 
+                      src="images/logo-units.png" /></a> 
+				</div>
                 <div class="col">
                   <div class="title">supported by</div>
-                  <a href="https://www.unito.it/" target="_blank" title="UNITO"><img
-
-                      src="images/logo-unito.png" /></a> </div>
+                  <a href="https://www.unito.it/" target="_blank" title="UNITO"><img 
+                      src="images/logo-unito.png" /></a> 
+				</div>
                 <div class="col">
                   <div class="title">hosted by</div>
-                  <a href="https://www.acm.org/" target="_blank" title="ACM"><img
-
-                      src="images/logo-acm.jpg" /></a> <a href="http://sigir.org/"
-
+                  <a href="https://www.acm.org/" target="_blank" title="ACM"><img 
+                      src="images/logo-acm.jpg" /></a> <a href="http://sigir.org/" 
                     target="_blank" title="SIGIR"><img src="images/logo-sigir.jpg" /></a>
-                  <a href="http://www.sigweb.org/" target="_blank" title="SIGWEB"><img
-
-                      src="images/logo-sigweb.jpg" /></a> </div>
-                <br />
+                  <a href="http://www.sigweb.org/" target="_blank" title="SIGWEB"><img 
+                      src="images/logo-sigweb.jpg" /></a> 
+				</div>
+				-->
                 <br />
                 Copyright © CIKM2018. All Rights Reserved. </div>
               <div class="clearboth"></div>
@@ -159,8 +174,29 @@
       </div>
       <!------------------------------------------- section 1 ------------------------------------------->
       <div class="section moveDown" id="section7">
+
+
+
+        <div class="intro">
+          <div class="padding40">
+            <h1 style="color:black;">Introduction</h1>
+            <p>빅데이터 연구실은 실용적 어플리케이션 연구에 초점을 맞추어 Twitter, Facebook, IMDB, Yelp 등 다양한 소셜 미디어에서 수집되는 대규모 다형성(heterogeneous) 데이터를 연구합니다. 예를 들어, 트위터의 그래프 형태의 소셜 네트워크 관계와 텍스트 형태의 메시지(micro-blogging), GPS 위치정보 등 서로 성질이 다른 다양한 데이터 형태로부터 클러스터링, 패턴 마이닝, 추천 시스템 등을 개발합니다. 현재는 인간 행동(human behavior)의 패턴을 분석하여 트위터의 텍스트와 GPS 위치정보를 통해 여행자의 경로
+패턴을 찾거나 Q&amp;A서비스의 데이터 분석을 통해 분야별 전문가 찾기와 같은 연구를 수행하고 있습니다. 연구에 활용되는 기반 기술로서 MapReduce를 이용한 병렬컴퓨팅, 데이터마이닝 기법, 데이터 베이스, 자연어처리, 머신 러닝과 딥러닝 등을 폭 넓게 학습합니다.
+              <br />
+              <br />
+
+We study real data mining problems in social media such as Twitter, Facebook, IMDB and Yelp. We focus on developing clustering, pattern mining and recommendation algorithms by analyzing big heterogenous data with various types including micro-blog message, GPS location and friend relationship. In this research direction, our group has been investigated the discovery of interesting and useful patterns in human behavior such as traveling trajectory patterns from geo-tagged Twitter messages and
+expert detection by analyzing Q&amp;A dialogues collected from Stack Overflow. We expect our members to: Develop sufficient expertise in recent knowledge mining techniques and Become skillful in managing big data with various data processing models such as MapReduce frameworks and NoSQLs.</p>
+            <div class="arrow"><a href="#3rdPage" class="moveSectionDown"></a></div>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <!------------------------------------------- section 2 ------------------------------------------->
+      <div class="section moveDown" id="section1">
+
         <div class="newsctn">
-          <h1>News</h1>
+          <h1>Publication</h1>
           <div class="keyctn"> <a href="sponsorship.html">
               <div class="keyleft">
                 <div class="keydate">23</div>
@@ -169,8 +205,7 @@
                 <div class="clearboth"></div>
               </div>
               <div class="keyright">
-                <div class="keyrightctn"><span>CIKM 2018 call for
-                    sponsorships and exhibitions</span></div>
+                <div class="keyrightctn"><span>CIKM 2018 call for sponsorships and exhibitions</span></div>
               </div>
               <div class="clearboth"></div>
             </a> </div>
@@ -203,25 +238,11 @@
             </a> </div>
           <!-- Organizer -->
           <!--				<div class="cta"><a href="callforpaper.html">More Details</a></div>-->
-          <div class="arrow"><a href="#3rdPage" class="moveSectionDown"></a></div>
+          <div class="arrow"><a href="#4thpage" class="moveSectionDown"></a></div>
         </div>
-      </div>
-      <!------------------------------------------- section 2 ------------------------------------------->
-      <div class="section moveDown" id="section1">
-        <div class="intro">
-          <div class="padding40">
-            <h1>Welcome</h1>
-            <p>빅데이터 연구실은 실용적 어플리케이션 연구에 초점을 맞추어 Twitter, Facebook, IMDB, Yelp 등 다양한 소셜 미디어에서 수집되는 대규모 다형성(heterogeneous) 데이터를 연구합니다. 예를 들어, 트위터의 그래프 형태의 소셜 네트워크 관계와 텍스트 형태의 메시지(micro-blogging), GPS 위치정보 등 서로 성질이 다른 다양한 데이터 형태로부터 클러스터링, 패턴 마이닝, 추천 시스템 등을 개발합니다. 현재는 인간 행동(human behavior)의 패턴을 분석하여 트위터의 텍스트와 GPS 위치정보를 통해 여행자의 경로
-패턴을 찾거나 Q&amp;A서비스의 데이터 분석을 통해 분야별 전문가 찾기와 같은 연구를 수행하고 있습니다. 연구에 활용되는 기반 기술로서 MapReduce를 이용한 병렬컴퓨팅, 데이터마이닝 기법, 데이터 베이스, 자연어처리, 머신 러닝과 딥러닝 등을 폭 넓게 학습합니다.
-              <br />
-              <br />
 
-We study real data mining problems in social media such as Twitter, Facebook, IMDB and Yelp. We focus on developing clustering, pattern mining and recommendation algorithms by analyzing big heterogenous data with various types including micro-blog message, GPS location and friend relationship. In this research direction, our group has been investigated the discovery of interesting and useful patterns in human behavior such as traveling trajectory patterns from geo-tagged Twitter messages and
-expert detection by analyzing Q&amp;A dialogues collected from Stack Overflow. We expect our members to: Develop sufficient expertise in recent knowledge mining techniques and Become skillful in managing big data with various data processing models such as MapReduce frameworks and NoSQLs.</p>
-            <div class="arrow"><a href="#4thpage" class="moveSectionDown"></a></div>
-            <p></p>
-          </div>
-        </div>
+
+
       </div>
       <!------------------------------------------- section 3 ------------------------------------------->
       <div class="section" id="section3">
@@ -689,8 +710,7 @@ expert detection by analyzing Q&amp;A dialogues collected from Stack Overflow. W
       <!------------------------------------------- section 5 ------------------------------------------->
       <div class="section" id="section8">
         <div class="profileall">
-          <!--			<h1>Sponsors</h1>-->
-          <h1 style="color:black;">Photo albums</h1>
+          <h1>Photos</h1>
 	<div class="keymainctn">
 	<div class="keyctn">
                 <div class="keyleft">
@@ -705,7 +725,9 @@ expert detection by analyzing Q&amp;A dialogues collected from Stack Overflow. W
                 </div>
                 <div class="clearboth"></div>
               </div> 
+          <div class="arrow"><a href="#lastPage" class="moveSectionDown"></a></div>
           </div>
+      </div>
       <!------------------------------------------- section 6 ------------------------------------------->
       <div class="section moveDown" id="section6">
         <div class="footer">
