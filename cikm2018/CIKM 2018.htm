@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="utf-8" />
-    <title>Big Data Mining Research Group</title>
-    <meta name="description" content="Big Data Mining Research Group" />
-    <meta name="keywords" content="CIKM2018" />
-    <meta name="Resource-type" content="Document" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link href="./CIKM 2018_files/css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./CIKM 2018_files/jquery.fullPage.css">
-    <link rel="stylesheet" type="text/css" href="./CIKM 2018_files/examples.css">
-    <link rel="stylesheet" type="text/css" href="./CIKM 2018_files/index.css">
-    <link rel="stylesheet" type="text/css" href="./CIKM 2018_files/overlay.css">
-	<script src="./CIKM 2018_files/jquery.min.js"></script>
-    <script src="./CIKM 2018_files/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="./CIKM 2018_files/scrolloverflow.js"></script>
-    <script type="text/javascript" src="./CIKM 2018_files/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="./CIKM 2018_files/examples.js"></script>
-    <script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				'navigation': true,
-				'navigationPosition': 'right',
-				'navigationTooltips': ['Index', 'Introduction', 'Publication', 'Members', 'Organizers', 'Photos', 'Contact'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage', '6thpage', 'lastPage'],
-				menu: '#menu',
-				scrollOverflow: true,
-				scrollOverflowOptions: {
-					scrollbars: true,
-			        mouseWheel: true,
-			        hideScrollbars: false,
-			        fadeScrollbars: false,
-			        disableMouse: true
-				},
-				
-				
-				'afterLoad': function(anchorLink, index){
-					if(index == 1){
-						$('.logo, .logo2').removeClass('current');
-					}
-					else{
-						
-						$('.logo, .logo2').addClass('current');
-					}
-					
-					if(index == 2){
-						$('.newsctn').addClass('current');
-					}
-					
-					
-				}
-				
-			});
-			
-		
-		(function blink() {
-			$('#flicker').fadeOut(500).fadeIn(500, blink); 
-		});
-		
-		});
-		
-	</script>
-  </head>
-  <body class="index">
-    <ul id="menu">
+<head>
+  <meta charset="utf-8" />
+  <title>Big Data Mining Research Group</title>
+  <meta name="description" content="Big Data Mining Research Group" />
+  <meta name="keywords" content="CIKM2018" />
+  <meta name="Resource-type" content="Document" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./CIKM 2018_files/css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./CIKM 2018_files/jquery.fullPage.css">
+  <link rel="stylesheet" type="text/css" href="./CIKM 2018_files/examples.css">
+  <link rel="stylesheet" type="text/css" href="./CIKM 2018_files/index.css">
+  <link rel="stylesheet" type="text/css" href="./CIKM 2018_files/overlay.css">
+  <script src="./CIKM 2018_files/jquery.min.js"></script>
+  <script src="./CIKM 2018_files/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="./CIKM 2018_files/scrolloverflow.js"></script>
+  <script type="text/javascript" src="./CIKM 2018_files/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="./CIKM 2018_files/examples.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+     $('#fullpage').fullpage({
+      'navigation': true,
+      'navigationPosition': 'right',
+      'navigationTooltips': ['Index', 'Introduction', 'Publication', 'Members', 'Organizers', 'Photos', 'Contact'],
+      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage', '6thpage', 'lastPage'],
+      menu: '#menu',
+      scrollOverflow: true,
+      scrollOverflowOptions: {
+       scrollbars: true,
+       mouseWheel: true,
+       hideScrollbars: false,
+       fadeScrollbars: false,
+       disableMouse: true
+     },
+
+
+     'afterLoad': function(anchorLink, index){
+       if(index == 1){
+        $('.logo, .logo2').removeClass('current');
+      }
+      else{
+
+        $('.logo, .logo2').addClass('current');
+      }
+
+      if(index == 2){
+        $('.newsctn').addClass('current');
+      }
+
+
+    }
+
+  });
+
+
+     (function blink() {
+       $('#flicker').fadeOut(500).fadeIn(500, blink); 
+     });
+
+   });
+
+ </script>
+</head>
+<body class="index">
+  <ul id="menu">
       <!--a href="http://www.cikm2018.units.it/">
         <li class="logo"><br />
         </li>
@@ -83,20 +83,20 @@
             </ul>
           </li>
           <li class="title">Organizations
-			  <ul>
-				 <li><a href="http://sw.hanyang.ac.kr/">Division of Computer Science</a></li>
-				 <li><a href="http://computing.hanyang.ac.kr/">College of Computing</a></li>
-				 <li><a href="http://www.hanyang.ac.kr/">Hanyang University</a></li>
-			  </ul>
-		  </li>
-          <li>Venue
-            <ul>
-              <li><a href="http://www.centrocongressilingotto.it/EN/Pages/Home.aspx"
-                  target="_blank">Venue</a></li>
+           <ul>
+             <li><a href="http://sw.hanyang.ac.kr/">Division of Computer Science</a></li>
+             <li><a href="http://computing.hanyang.ac.kr/">College of Computing</a></li>
+             <li><a href="http://www.hanyang.ac.kr/">Hanyang University</a></li>
+           </ul>
+         </li>
+         <li>Venue
+          <ul>
+            <li><a href="http://www.centrocongressilingotto.it/EN/Pages/Home.aspx"
+              target="_blank">Venue</a></li>
               <li><a href="http://www.turismotorino.org/docs/EN/A24/territory" target="_blank">Visiting
-                  Turin</a></li>
+              Turin</a></li>
             </ul>
-            </li>
+          </li>
         </ul>
       </div>
     </div>
@@ -107,27 +107,27 @@
           <div class="padding">
             <h1>Big Data Mining Research Group</h1>
             <div class="hpcol hpcol5">
-				<h3>Colllege of Computing,<br/> Hanyang University at Ansan</h3>
+              <h3>Colllege of Computing,<br/> Hanyang University at Ansan</h3>
 			<!--
               <div class="box yellow">22 - 26 October 2018</div>
               <a href="http://www.centrocongressilingotto.it/EN/Pages/Home.aspx"
                 target="_blank">
                 <div class="box red">Lingotto, Turin, Italy</div>                                
-			  </a> -->
-			</div>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
+              </a> -->
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
 			<!--
               <a href="CIKM2018AnalytiCup.html"
                 target="_blank">
@@ -138,7 +138,7 @@
                     sponsorships and exhibitions</div>
               <br>
               <div class="clearboth"></div>
-			-->
+            -->
           </div>
           <div class="hpfooter">
             <div class="padding">
@@ -162,123 +162,123 @@
                   <a href="http://www.sigweb.org/" target="_blank" title="SIGWEB"><img 
                       src="images/logo-sigweb.jpg" /></a> 
 				</div>
-				-->
-                <br />
-                Copyright © CIKM2018. All Rights Reserved. </div>
-              <div class="clearboth"></div>
-            </div>
-          </div>
-          <div class="arrow"><a href="#secondPage" class="moveSectionDown"></a></div>
-          <div class="spacergeneral"></div>
-        </div>
+      -->
+      <br />
+    Copyright © CIKM2018. All Rights Reserved. </div>
+    <div class="clearboth"></div>
+  </div>
+</div>
+<div class="arrow"><a href="#secondPage" class="moveSectionDown"></a></div>
+<div class="spacergeneral"></div>
+</div>
+</div>
+<!------------------------------------------- section 1 ------------------------------------------->
+<div class="section moveDown" id="section7">
+
+
+
+  <div class="intro">
+    <div class="padding40">
+      <h1 style="color:black;">Introduction</h1>
+      <p>빅데이터 연구실은 실용적 어플리케이션 연구에 초점을 맞추어 Twitter, Facebook, IMDB, Yelp 등 다양한 소셜 미디어에서 수집되는 대규모 다형성(heterogeneous) 데이터를 연구합니다. 예를 들어, 트위터의 그래프 형태의 소셜 네트워크 관계와 텍스트 형태의 메시지(micro-blogging), GPS 위치정보 등 서로 성질이 다른 다양한 데이터 형태로부터 클러스터링, 패턴 마이닝, 추천 시스템 등을 개발합니다. 현재는 인간 행동(human behavior)의 패턴을 분석하여 트위터의 텍스트와 GPS 위치정보를 통해 여행자의 경로
+        패턴을 찾거나 Q&amp;A서비스의 데이터 분석을 통해 분야별 전문가 찾기와 같은 연구를 수행하고 있습니다. 연구에 활용되는 기반 기술로서 MapReduce를 이용한 병렬컴퓨팅, 데이터마이닝 기법, 데이터 베이스, 자연어처리, 머신 러닝과 딥러닝 등을 폭 넓게 학습합니다.
+        <br />
+        <br />
+
+        We study real data mining problems in social media such as Twitter, Facebook, IMDB and Yelp. We focus on developing clustering, pattern mining and recommendation algorithms by analyzing big heterogenous data with various types including micro-blog message, GPS location and friend relationship. In this research direction, our group has been investigated the discovery of interesting and useful patterns in human behavior such as traveling trajectory patterns from geo-tagged Twitter messages and
+      expert detection by analyzing Q&amp;A dialogues collected from Stack Overflow. We expect our members to: Develop sufficient expertise in recent knowledge mining techniques and Become skillful in managing big data with various data processing models such as MapReduce frameworks and NoSQLs.</p>
+      <div class="arrow"><a href="#3rdPage" class="moveSectionDown"></a></div>
+      <p></p>
+    </div>
+  </div>
+</div>
+<!------------------------------------------- section 2 ------------------------------------------->
+<div class="section moveDown" id="section1">
+
+  <div class="newsctn">
+    <h1>Publication</h1>
+    <div class="keyctn"> <a href="sponsorship.html">
+      <div class="keyleft">
+        <div class="keydate">23</div>
+        <div class="keymonth">December<br />
+        2017</div>
+        <div class="clearboth"></div>
       </div>
-      <!------------------------------------------- section 1 ------------------------------------------->
-      <div class="section moveDown" id="section7">
-
-
-
-        <div class="intro">
-          <div class="padding40">
-            <h1 style="color:black;">Introduction</h1>
-            <p>빅데이터 연구실은 실용적 어플리케이션 연구에 초점을 맞추어 Twitter, Facebook, IMDB, Yelp 등 다양한 소셜 미디어에서 수집되는 대규모 다형성(heterogeneous) 데이터를 연구합니다. 예를 들어, 트위터의 그래프 형태의 소셜 네트워크 관계와 텍스트 형태의 메시지(micro-blogging), GPS 위치정보 등 서로 성질이 다른 다양한 데이터 형태로부터 클러스터링, 패턴 마이닝, 추천 시스템 등을 개발합니다. 현재는 인간 행동(human behavior)의 패턴을 분석하여 트위터의 텍스트와 GPS 위치정보를 통해 여행자의 경로
-패턴을 찾거나 Q&amp;A서비스의 데이터 분석을 통해 분야별 전문가 찾기와 같은 연구를 수행하고 있습니다. 연구에 활용되는 기반 기술로서 MapReduce를 이용한 병렬컴퓨팅, 데이터마이닝 기법, 데이터 베이스, 자연어처리, 머신 러닝과 딥러닝 등을 폭 넓게 학습합니다.
-              <br />
-              <br />
-
-We study real data mining problems in social media such as Twitter, Facebook, IMDB and Yelp. We focus on developing clustering, pattern mining and recommendation algorithms by analyzing big heterogenous data with various types including micro-blog message, GPS location and friend relationship. In this research direction, our group has been investigated the discovery of interesting and useful patterns in human behavior such as traveling trajectory patterns from geo-tagged Twitter messages and
-expert detection by analyzing Q&amp;A dialogues collected from Stack Overflow. We expect our members to: Develop sufficient expertise in recent knowledge mining techniques and Become skillful in managing big data with various data processing models such as MapReduce frameworks and NoSQLs.</p>
-            <div class="arrow"><a href="#3rdPage" class="moveSectionDown"></a></div>
-            <p></p>
-          </div>
-        </div>
+      <div class="keyright">
+        <div class="keyrightctn"><span>CIKM 2018 call for sponsorships and exhibitions</span></div>
       </div>
-      <!------------------------------------------- section 2 ------------------------------------------->
-      <div class="section moveDown" id="section1">
-
-        <div class="newsctn">
-          <h1>Publication</h1>
-          <div class="keyctn"> <a href="sponsorship.html">
-              <div class="keyleft">
-                <div class="keydate">23</div>
-                <div class="keymonth">December<br />
-                  2017</div>
-                <div class="clearboth"></div>
-              </div>
-              <div class="keyright">
-                <div class="keyrightctn"><span>CIKM 2018 call for sponsorships and exhibitions</span></div>
-              </div>
-              <div class="clearboth"></div>
-            </a> </div>
-          <!-- Organizer -->
-          <div class="keyctn"> <a href="CIKM2018AnalytiCup.html">
-              <div class="keyleft">
-                <div class="keydate">15</div>
-                <div class="keymonth">December<br />
-                  2017</div>
-                <div class="clearboth"></div>
-              </div>
-              <div class="keyright">
-                <div class="keyrightctn"><span>CIKM 2018 AnalytiCup call for
-                    proposals</span></div>
-              </div>
-              <div class="clearboth"></div>
-            </a> </div>
-          <!-- Organizer -->
-          <div class="keyctn"> <a href="http://www.cikm2018.units.it/">
-              <div class="keyleft">
-                <div class="keydate">22</div>
-                <div class="keymonth">October<br />
-                  2017</div>
-                <div class="clearboth"></div>
-              </div>
-              <div class="keyright">
-                <div class="keyrightctn"><span>CIKM 2018 Web site is online!</span></div>
-              </div>
-              <div class="clearboth"></div>
-            </a> </div>
-          <!-- Organizer -->
-          <!--				<div class="cta"><a href="callforpaper.html">More Details</a></div>-->
-          <div class="arrow"><a href="#4thpage" class="moveSectionDown"></a></div>
-        </div>
-
-
-
+      <div class="clearboth"></div>
+    </a> </div>
+    <!-- Organizer -->
+    <div class="keyctn"> <a href="CIKM2018AnalytiCup.html">
+      <div class="keyleft">
+        <div class="keydate">15</div>
+        <div class="keymonth">December<br />
+        2017</div>
+        <div class="clearboth"></div>
       </div>
-      <!------------------------------------------- section 3 ------------------------------------------->
-      <div class="section" id="section3">
-        <div class="padding4020">
-          <h1>Members</h1>
+      <div class="keyright">
+        <div class="keyrightctn"><span>CIKM 2018 AnalytiCup call for
+        proposals</span></div>
+      </div>
+      <div class="clearboth"></div>
+    </a> </div>
+    <!-- Organizer -->
+    <div class="keyctn"> <a href="http://www.cikm2018.units.it/">
+      <div class="keyleft">
+        <div class="keydate">22</div>
+        <div class="keymonth">October<br />
+        2017</div>
+        <div class="clearboth"></div>
+      </div>
+      <div class="keyright">
+        <div class="keyrightctn"><span>CIKM 2018 Web site is online!</span></div>
+      </div>
+      <div class="clearboth"></div>
+    </a> </div>
+    <!-- Organizer -->
+    <!--				<div class="cta"><a href="callforpaper.html">More Details</a></div>-->
+    <div class="arrow"><a href="#4thpage" class="moveSectionDown"></a></div>
+  </div>
+
+
+
+</div>
+<!------------------------------------------- section 3 ------------------------------------------->
+<div class="section" id="section3">
+  <div class="padding4020">
+    <h1>Members</h1>
           <!-- RIMOSSA LA INTRO <div class="intro3">The Conference on Information and Knowledge Management (CIKM) provides a unique venue for 
 			industry and academia to present and discuss state-of-the-art research on search and discovery, data mining and database systems, all at 			a single conference. CIKMÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢17 comes to Singapore on Nov 6-10, 2017, with the theme of Smart Cities, Smart Nations. Lying at the intersection of databases, 
-			information retrieval and knowledge management, CIKM is uniquely placed to highlight technologies and insights that materialize the ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œSmart Cities, Smart NationsÃƒÂ¢Ã¢â€šÂ¬Ã‚Â 			vision shared by many urban areas and their countries.</div> RIMOSSA LA INTRO (FINE) -->
-          <div class="hpkeydates first">
-            <h2>Professor</h2>
-            <div class="keymainctn">
-              <div class="keyctn">
-                <div class="keyleft">
-					<div class="membername">Younghoon<br/>Kim
-                    </div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
+   information retrieval and knowledge management, CIKM is uniquely placed to highlight technologies and insights that materialize the ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œSmart Cities, Smart NationsÃƒÂ¢Ã¢â€šÂ¬Ã‚Â 			vision shared by many urban areas and their countries.</div> RIMOSSA LA INTRO (FINE) -->
+   <div class="hpkeydates first">
+    <h2>Professor</h2>
+    <div class="keymainctn">
+      <div class="keyctn">
+        <div class="keyleft">
+         <div class="membername">Younghoon<br/>Kim
+         </div>
+         <div class="clearboth"></div>
+       </div>
+       <div class="keyright">
                   <!-- div class="keyrightctn"><span>Full and Short Research Paper
-					  Abstract Submission Deadline</span></div -->
-			  <div class="memberpic"> <img src="pictures/yhkim.jpg" /></div>
+                  Abstract Submission Deadline</span></div -->
+                  <div class="memberpic"> <img src="members/yhkim.jpg" /></div>
                 </div>
                 <div class="clearboth"></div>
               </div>
               <!-- Organizer -->
               <div class="keyctn">
-		<div class="keyctn">
-                <div class="keyleft">
-                  <div class="keymonth">Email</div>
+                <div class="keyctn">
+                  <div class="keyleft">
+                    <div class="keymonth">Email</div>
+                    <div class="clearboth"></div>
+                  </div>
+                  <div class="keyright">
+                    <div class="keyrightctn"><span>nongaussian@hanyang.ac.kr</span></div>
+                  </div>
                   <div class="clearboth"></div>
                 </div>
-                <div class="keyright">
-		<div class="keyrightctn"><span>nongaussian@hanyang.ac.kr</span></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
                 <div class="keyleft">
                   <div class="keymonth" style="font-size: 16px;">PUBLICATION</div>
                   <div class="clearboth"></div>
@@ -288,13 +288,13 @@ expert detection by analyzing Q&amp;A dialogues collected from Stack Overflow. W
                 </div>
                 <div class="clearboth"></div>
               </div>
-		<br />
+              <br />
               <div class="keyleft2">
-                  <div class="keymonth" style="font-size: 16px;">EDUCATION & RESEARCH EXPERIENCE</div>
-                  <div class="clearboth"></div>
-                </div>
-		
-		
+                <div class="keymonth" style="font-size: 16px;">EDUCATION & RESEARCH EXPERIENCE</div>
+                <div class="clearboth"></div>
+              </div>
+
+
 
               <!-- Organizer -->
               <!-- RIMOSSO PER ORA <div class="cta"><a href="callforpaper.html">More Details</a></div> -->
@@ -312,199 +312,219 @@ expert detection by analyzing Q&amp;A dialogues collected from Stack Overflow. W
                   <div class="clearboth"></div>
                 </div>
                 <div class="keyright">
-			      <div class="memberpic"> <img src="pictures/Woongheelee_small.jpg" /></div>
+                 <div class="memberpic"> <a href="https://github.com/WoongheeLee" target=_blank><img src="members/Woongheelee_small.jpg" /></a></div>
+               </div>
+               <div class="clearboth"></div>
+             </div>
+             <!-- Organizer -->
+             <div class="keyctn">
+              <div class="keyleft">
+                <div class="keymonth">Email</div>
+                <div class="clearboth"></div>
+              </div>
+              <div class="keyright">
+                <div class="keyrightctn"><span><a href="matilto:woongheelee@hanyang.ac.kr">woongheelee@hanyang.ac.kr</a></span></div>
+              </div>
+              <div class="clearboth"></div>
+            </div><div class="keyctn">
+              <div class="keyleft">
+                <div class="keymonth">Topics</div>
+                <div class="clearboth"></div>
+              </div>
+              <div class="keyright">
+                <div class="keyrightctn"><span>Interactive machine learning, time series analysis, social network analysis</span></div>
+              </div>
+              <div class="keyleft">
+                <div class="Keymonth">Selected publications</div>
+              </div>
+              <div class="keyright">
+                <div class="keyrightctn">
+                  <div><b><u>Lee, Woonghee</u></b> and Kim, Younghoon (2018), Interactive Sleep Stage Labelling Tool for Diagnosing Sleep Disorder Using Deep Learning, 40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society</div>
+                  <div><b><u>이웅희</u></b>, 김영훈 (2017), 맵리듀스 기반 상향식 최대 밀도 부분그래프 탐색 알고리즘, Journal of KIISE</div>
                 </div>
                 <div class="clearboth"></div>
               </div>
-              <!-- Organizer -->
-              <div class="keyctn">
-                <div class="keyleft">
-                  <div class="keymonth">Email</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-		<div class="keyrightctn"><span>woongheelee@hanyang.ac.kr</span></div>
-                </div>
-                <div class="clearboth"></div>
-              </div><div class="keyctn">
-                <div class="keyleft">
-                  <div class="keymonth">Github</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-		<div class="keyrightctn"><span>https://github.com/WoongheeLee?tab=repositories</span></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-	<br />
-<div class="keyctn">
-                <div class="keyleft">
-                  <div class="membername">Keonwoo<br />Kim</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-			      <div class="memberpic"> <img src="pictures/kwkim.jpeg" /></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-              <!-- Organizer -->
-              <div class="keyctn">
-                <div class="keyleft">
-                  <div class="keymonth">Email</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-		<div class="keyrightctn"><span>kdbml314@gmail.com</span></div>
-                </div>
-                <div class="clearboth"></div>
-              </div><div class="keyctn">
-                <div class="keyleft">
-                  <div class="keymonth">Github</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-		<div class="keyrightctn"><span>https://github.com/reavil01</span></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-
-              <!-- RIMOSSO PER ORA <div class="cta"><a href="callfordemo.html">More Details</a></div> -->
-              <br />
-              <br />
             </div>
+            <br />
+            <div class="keyctn">
+              <div class="keyleft">
+                <div class="membername">Keonwoo<br />Kim</div>
+                <div class="clearboth"></div>
+              </div>
+              <div class="keyright">
+               <div class="memberpic"> <img src="members/kwkim.jpeg" /></div>
+             </div>
+             <div class="clearboth"></div>
+           </div>
+           <!-- Organizer -->
+           <div class="keyctn">
+            <div class="keyleft">
+              <div class="keymonth">Email</div>
+              <div class="clearboth"></div>
+            </div>
+            <div class="keyright">
+              <div class="keyrightctn"><span>kdbml314@gmail.com</span></div>
+            </div>
+            <div class="clearboth"></div>
           </div>
-          <!-- hpkeydates -->
-          <div class="hpkeydates">
-            <h2>MS Program</h2>
-            <div class="keymainctn">
-		<div class="keyctn">
-                <div class="keyleft">
-                  <div class="membername">Joonsub<br />Park</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-			      <div class="memberpic"> <img src="pictures/jspark.jpg" /></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-              <!-- Organizer -->
-              <div class="keyctn">
-                <div class="keyleft">
-                  <div class="keymonth">Email</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-		<div class="keyrightctn"><span>mrfaith@hanyang.ac.kr</span></div>
-                </div>
-                <div class="clearboth"></div>
-              </div><div class="keyctn">
-                <div class="keyleft">
-                  <div class="keymonth">Github</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-		<div class="keyrightctn"><span>https://github.com/557mp</span></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-			<br />
-		<div class="keyctn">
-                <div class="keyleft">
-                  <div class="membername">Jinhee<br />Kim</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-			      <div class="memberpic"> <img src="pictures/Jini.png" /></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-              <!-- Organizer -->
-              <div class="keyctn">
-                <div class="keyleft">
-                  <div class="keymonth">Email</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-		<div class="keyrightctn"><span>wlsl5378@naver.com</span></div>
-                </div>
-                <div class="clearboth"></div>
-              </div><div class="keyctn">
-                <div class="keyleft">
-                  <div class="keymonth">Github</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-		<div class="keyrightctn"><span>https://github.com/wlslwlsl</span></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-	<br />
+          <div class="keyctn">
+            <div class="keyleft">
+              <div class="keymonth">Topics</div>
+              <div class="clearboth"></div>
+            </div>
+            <div class="keyright">
+              <div class="keyrightctn"><span>Moving object, time series analysis</span></div>
+            </div>
+            <div class="clearboth"></div>
+          </div>
+          <div class="keyctn">
+            <div class="keyleft">
+              <div class="keymonth">Selected publications</div>
+              <div class="clearboth"></div>
+            </div>
+            <div class="keyright">
+              <div class="keyrightctn"><span>김건우; 김영훈. K 개의 점 데이터를 포함하는 최소 MBR 탐색. 정보과학회논문지, 2017, 44.1: 71-77.</span></div>
+            </div>
+            <div class="clearboth"></div>
+          </div>
 
-	<div class="keyctn">
-                <div class="keyleft">
-                  <div class="membername">Youngjin<br />Kim</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-			      <div class="memberpic"> <img src="pictures/Youngjin_kim.jpg" /></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-              <!-- Organizer -->
-              <div class="keyctn">
-                <div class="keyleft">
-                  <div class="keymonth">Email</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-		<div class="keyrightctn"><span>kyj7479@naver.com</span></div>
-                </div>
-                <div class="clearboth"></div>
-              </div><div class="keyctn">
-                <div class="keyleft">
-                  <div class="keymonth">Github</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-		<div class="keyrightctn"><span>https://github.com/kyj7479</span></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-	<br />
-		<div class="keyctn">
-                <div class="keyleft">
-                  <div class="membername">Jongwoo<br />Kim</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-			      <div class="memberpic"> <img src="pictures/kjw.jpg" /></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-              <!-- Organizer -->
-              <div class="keyctn">
-                <div class="keyleft">
-                  <div class="keymonth">Email</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-		<div class="keyrightctn"><span>kjwspecial@naver.com</span></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-		<div class="keyctn">
-                <div class="keyleft">
-                  <div class="keymonth">Github</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-		<div class="keyrightctn"><span>https://github.com/kjwspecial</span></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
+          <!-- RIMOSSO PER ORA <div class="cta"><a href="callfordemo.html">More Details</a></div> -->
+          <br />
+          <br />
+        </div>
+      </div>
+      <!-- hpkeydates -->
+      <div class="hpkeydates">
+        <h2>MS Program</h2>
+        <div class="keymainctn">
+          <div class="keyctn">
+            <div class="keyleft">
+              <div class="membername">Joonsub<br />Park</div>
+              <div class="clearboth"></div>
+            </div>
+            <div class="keyright">
+             <div class="memberpic"> <img src="members/jspark.jpg" /></div>
+           </div>
+           <div class="clearboth"></div>
+         </div>
+         <!-- Organizer -->
+         <div class="keyctn">
+          <div class="keyleft">
+            <div class="keymonth">Email</div>
+            <div class="clearboth"></div>
+          </div>
+          <div class="keyright">
+            <div class="keyrightctn"><span>mrfaith@hanyang.ac.kr</span></div>
+          </div>
+          <div class="clearboth"></div>
+        </div><div class="keyctn">
+          <div class="keyleft">
+            <div class="keymonth">Github</div>
+            <div class="clearboth"></div>
+          </div>
+          <div class="keyright">
+            <div class="keyrightctn"><span>https://github.com/557mp</span></div>
+          </div>
+          <div class="clearboth"></div>
+        </div>
+        <br />
+        <div class="keyctn">
+          <div class="keyleft">
+            <div class="membername">Jinhee<br />Kim</div>
+            <div class="clearboth"></div>
+          </div>
+          <div class="keyright">
+           <div class="memberpic"> <img src="members/Jini.png" /></div>
+         </div>
+         <div class="clearboth"></div>
+       </div>
+       <!-- Organizer -->
+       <div class="keyctn">
+        <div class="keyleft">
+          <div class="keymonth">Email</div>
+          <div class="clearboth"></div>
+        </div>
+        <div class="keyright">
+          <div class="keyrightctn"><span>wlsl5378@naver.com</span></div>
+        </div>
+        <div class="clearboth"></div>
+      </div><div class="keyctn">
+        <div class="keyleft">
+          <div class="keymonth">Github</div>
+          <div class="clearboth"></div>
+        </div>
+        <div class="keyright">
+          <div class="keyrightctn"><span>https://github.com/wlslwlsl</span></div>
+        </div>
+        <div class="clearboth"></div>
+      </div>
+      <br />
+
+      <div class="keyctn">
+        <div class="keyleft">
+          <div class="membername">Youngjin<br />Kim</div>
+          <div class="clearboth"></div>
+        </div>
+        <div class="keyright">
+         <div class="memberpic"> <img src="members/Youngjin_kim.jpg" /></div>
+       </div>
+       <div class="clearboth"></div>
+     </div>
+     <!-- Organizer -->
+     <div class="keyctn">
+      <div class="keyleft">
+        <div class="keymonth">Email</div>
+        <div class="clearboth"></div>
+      </div>
+      <div class="keyright">
+        <div class="keyrightctn"><span>kyj7479@naver.com</span></div>
+      </div>
+      <div class="clearboth"></div>
+    </div><div class="keyctn">
+      <div class="keyleft">
+        <div class="keymonth">Github</div>
+        <div class="clearboth"></div>
+      </div>
+      <div class="keyright">
+        <div class="keyrightctn"><span>https://github.com/kyj7479</span></div>
+      </div>
+      <div class="clearboth"></div>
+    </div>
+    <br />
+    <div class="keyctn">
+      <div class="keyleft">
+        <div class="membername">Jongwoo<br />Kim</div>
+        <div class="clearboth"></div>
+      </div>
+      <div class="keyright">
+       <div class="memberpic"> <img src="members/kjw.jpg" /></div>
+     </div>
+     <div class="clearboth"></div>
+   </div>
+   <!-- Organizer -->
+   <div class="keyctn">
+    <div class="keyleft">
+      <div class="keymonth">Email</div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="keyright">
+      <div class="keyrightctn"><span>kjwspecial@naver.com</span></div>
+    </div>
+    <div class="clearboth"></div>
+  </div>
+  <div class="keyctn">
+    <div class="keyleft">
+      <div class="keymonth">Github</div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="keyright">
+      <div class="keyrightctn"><span>https://github.com/kjwspecial</span></div>
+    </div>
+    <div class="clearboth"></div>
+  </div>
 
 
-              <!-- Organizer -->
+  <!-- Organizer -->
               <!--
               <div class="keyctn">
                 <div class="keyleft">
@@ -529,76 +549,76 @@ expert detection by analyzing Q&amp;A dialogues collected from Stack Overflow. W
           <!-- hpkeydates -->
 
           <div class="hpkeydates">
- <br /> <br /> <br />
-            <div class="keymainctn">
-              <div class="keyctn">
-                <div class="keyleft">
-                  <div class="membername">Seungmin<br />lee</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-			      <div class="memberpic"> <img src="pictures/leesm.jpg" /></div>
-                </div>
+           <br /> <br /> <br />
+           <div class="keymainctn">
+            <div class="keyctn">
+              <div class="keyleft">
+                <div class="membername">Seungmin<br />lee</div>
                 <div class="clearboth"></div>
               </div>
- <br /> <br /> <br />
-		<div class="keyctn">
-                <div class="keyleft">
-                  <div class="membername">Liu Ming</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-			      <div class="memberpic"> <img src="pictures/liu.jpg" /></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-		
-              <br />
-              <br />
+              <div class="keyright">
+               <div class="memberpic"> <img src="members/leesm.jpg" /></div>
+             </div>
+             <div class="clearboth"></div>
+           </div>
+           <br /> <br /> <br />
+           <div class="keyctn">
+            <div class="keyleft">
+              <div class="membername">Ming<br/>Liu</div>
+              <div class="clearboth"></div>
             </div>
+            <div class="keyright">
+             <div class="memberpic"> <img src="members/liu.jpg" /></div>
+           </div>
+           <div class="clearboth"></div>
+         </div>
+
+         <br />
+         <br />
+       </div>
+     </div>
+     <div class="hpkeydates">
+      <h2>Alumni</h2>
+
+      <div class="keymainctn">
+
+        <div class="keyctn">
+          <div class="keyleft">
+            <div class="membername">Ickchae<br />Na</div>
+            <div class="clearboth"></div>
           </div>
-<div class="hpkeydates">
-            <h2>Alumni</h2>
+          <div class="keyright">
+           <div class="memberpic"> <img src="members/naic.jpg" /></div>
+         </div>
+         <div class="clearboth"></div>
+       </div>
 
-            <div class="keymainctn">
-
-		<div class="keyctn">
-                <div class="keyleft">
-                  <div class="membername">Ickchae<br />Na</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-			      <div class="memberpic"> <img src="pictures/naic.jpg" /></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-	
-              <br />
-              <br />
-            </div>
-          </div>
-<div class="hpkeydates">
-            <div class="keymainctn">
- <br /> <br /> <br />
-		<div class="keyctn">
-                <div class="keyleft">
-                  <div class="membername">Moonjong<br />Jang</div>
-                  <div class="clearboth"></div>
-                </div>
-                <div class="keyright">
-			      <div class="memberpic"> <img src="pictures/jmj.jpg" /></div>
-                </div>
-                <div class="clearboth"></div>
-              </div>
-
-		
-              <br />
-              <br />
-            </div>
-          </div>
+       <br />
+       <br />
+     </div>
+   </div>
+   <div class="hpkeydates">
+    <div class="keymainctn">
+     <br /> <br /> <br />
+     <div class="keyctn">
+      <div class="keyleft">
+        <div class="membername">Moonjong<br />Jang</div>
+        <div class="clearboth"></div>
+      </div>
+      <div class="keyright">
+       <div class="memberpic"> <img src="members/jmj.jpg" /></div>
+     </div>
+     <div class="clearboth"></div>
+   </div>
 
 
-          <!-- hpkeydates -->
+   <br />
+   <br />
+ </div>
+</div>
+
+
+<!-- hpkeydates -->
 		  <!--
           <div class="hpkeydates">
             <h2>Call for Workshops</h2>
@@ -646,16 +666,16 @@ expert detection by analyzing Q&amp;A dialogues collected from Stack Overflow. W
               <br />
             </div>
           </div>
-		  -->
-          <!-- hpkeydates -->
-          <div class="clearboth"></div>
-          <div class="arrow"><a href="#5thpage" class="moveSectionDown"></a></div>
-          <br />
-          <br />
-          <br />
-          <br />
-        </div>
-        <!-- container --> </div>
+        -->
+        <!-- hpkeydates -->
+        <div class="clearboth"></div>
+        <div class="arrow"><a href="#5thpage" class="moveSectionDown"></a></div>
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+      <!-- container --> </div>
       <!------------------------------------------- section 4 ------------------------------------------->
       <div class="section" id="section2">
         <div class="intro2">
@@ -673,16 +693,16 @@ expert detection by analyzing Q&amp;A dialogues collected from Stack Overflow. W
                 <div class="profilectn">                	<img src="images/logo-larc.jpg">
                     <div class="profilename">                      <h1>Living Analytics Research <br>
 					  Centre </h1>                    </div>
-                </div></a> -->
-            <!-- Organizer -->
+          </div></a> -->
+          <!-- Organizer -->
             <!-- RIMOSSO PER ORA <a href="http://illinois.edu/index.html" target="_blank">
               <div class="profilectn">                	<img src="images/logo-uiuc.jpg">
                     <div class="profilename">                      <h1>University of Illinois at Urbana-Champaign
 				</h1>                    </div>
-              </div></a> -->
-            <!-- Organizer -->
-            <h1>Projects</h1>
-              <div class="profilectn"> <img src="images/bk21.png" />
+      </div></a> -->
+      <!-- Organizer -->
+      <h1>Projects</h1>
+      <div class="profilectn"> <img src="images/bk21.png" />
                 <!--div class="profilename">
                   <h1>삼성미래재단</h1>
                 </div-->
@@ -697,63 +717,63 @@ expert detection by analyzing Q&amp;A dialogues collected from Stack Overflow. W
                   <h1>에너지기술평가원</h1>
                 </div-->
               </div>
-            <!-- Organizer -->
+              <!-- Organizer -->
             <!-- RIMOSSO PER ORA <a href="http://www.iskosg.org/" target="_blank">
                 <div class="profilectn">                	<img src="images/logo-isko2.jpg" alt="ISKO"/>
                     <div class="profilename">                      <h1>International Society for Knowledge Organization</h1>
                     </div>                </div></a> -->
-            <!-- Organizer --> </div>
-          <div class="arrow"><a href="#6thpage" class="moveSectionDown"></a></div>
-          <div class="yellowbg"></div>
-        </div>
-      </div>
-      <!------------------------------------------- section 5 ------------------------------------------->
-      <div class="section" id="section8">
-        <div class="profileall">
-          <h1>Photos</h1>
-	<div class="keymainctn">
-	<div class="keyctn">
-                <div class="keyleft">
-                  <div class="keydate">6</div>
-                  <div class="keymonth">Aug <br />
-                    2018</div>
-                  <div class="clearboth"></div>
+                    <!-- Organizer --> </div>
+                    <div class="arrow"><a href="#6thpage" class="moveSectionDown"></a></div>
+                    <div class="yellowbg"></div>
+                  </div>
                 </div>
-                <div class="keyright">
-                  <div class="memberpic"> <img src="" /></div>
+                <!------------------------------------------- section 5 ------------------------------------------->
+                <div class="section" id="section8">
+                  <div class="profileall">
+                    <h1>Photos</h1>
+                    <div class="keymainctn">
+                     <div class="keyctn">
+                      <div class="keyleft">
+                        <div class="keydate">6</div>
+                        <div class="keymonth">Aug <br />
+                        2018</div>
+                        <div class="clearboth"></div>
+                      </div>
+                      <div class="keyright">
+                        <div class="memberpic"> <img src="" /></div>
+                      </div>
+                    </div>
+                    <div class="clearboth"></div>
+                  </div> 
+                  <div class="arrow"><a href="#lastPage" class="moveSectionDown"></a></div>
                 </div>
+              </div>
+              <!------------------------------------------- section 6 ------------------------------------------->
+              <div class="section moveDown" id="section6">
+                <div class="footer">
+                  <div class="maincol maincol10"> <!-- img src="./CIKM 2018_files/logoCIKM2018.jpg" class="logo2" /-->
+                    <div class="footer_fb">
+                      <h3>Contact us</h3>
+                      <div class="padding40"><span>
+                        [Address]<br/>
+                        55 Hanyangdaehak-ro, Sangnok, Ansan, Kyonggi-do, Korea.<br/>
+                        경기도 안산시 상록구 55 한양대학로 제4공학관 317호(교수연구실), 314호(빅데이터마이닝연구실)
+                      </div>
+                      <iframe src="https://maps.google.com/?ll=37.297057%2C126.836444&amp;spn=0.002612%2C0.00751&amp;ie=UTF8&amp;z=17&amp;t=roadmap&amp;sll=37.297057%2C126.836444&amp;sspn=0.002612%2C0.00751&amp;q=37.296699%2C126.836386%20(Untitled%20Location)&amp;output=embed" title="Untitled Location" width="100%" height="300" frameborder="0" class="map_embed" scrolling="no"></iframe>
+                    </div>
+                    <div class="clearboth"></div>
+                  </div>
                 </div>
-                <div class="clearboth"></div>
-              </div> 
-          <div class="arrow"><a href="#lastPage" class="moveSectionDown"></a></div>
-          </div>
-      </div>
-      <!------------------------------------------- section 6 ------------------------------------------->
-      <div class="section moveDown" id="section6">
-        <div class="footer">
-          <div class="maincol maincol10"> <!-- img src="./CIKM 2018_files/logoCIKM2018.jpg" class="logo2" /-->
-            <div class="footer_fb">
-              <h3>Contact us</h3>
-          <div class="padding40"><span>
-						  [Address]<br/>
-						  55 Hanyangdaehak-ro, Sangnok, Ansan, Kyonggi-do, Korea.<br/>
-						  경기도 안산시 상록구 55 한양대학로 제4공학관 317호(교수연구실), 314호(빅데이터마이닝연구실)
-			  </div>
-			  <iframe src="https://maps.google.com/?ll=37.297057%2C126.836444&amp;spn=0.002612%2C0.00751&amp;ie=UTF8&amp;z=17&amp;t=roadmap&amp;sll=37.297057%2C126.836444&amp;sspn=0.002612%2C0.00751&amp;q=37.296699%2C126.836386%20(Untitled%20Location)&amp;output=embed" title="Untitled Location" width="100%" height="300" frameborder="0" class="map_embed" scrolling="no"></iframe>
-			</div>
-            <div class="clearboth"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script>
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-}
+              </div>
+            </div>
+            <script>
+              function openNav() {
+                document.getElementById("myNav").style.height = "100%";
+              }
 
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-}
-</script>
-  </body>
-</html>
+              function closeNav() {
+                document.getElementById("myNav").style.height = "0%";
+              }
+            </script>
+          </body>
+          </html>
