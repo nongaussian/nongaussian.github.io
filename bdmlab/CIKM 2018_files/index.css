@@ -1044,9 +1044,8 @@ animation: mymove 3s infinite;
 }
 
 .downloadleaflet{
-	position:absolute;
-	top:150px;
-	left:15px;
+	float: left;
+	width:100%;
 }
 
 .footer{
