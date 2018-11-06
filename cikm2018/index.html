@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8" />
+		<title>Big Data Mining Research Group</title>
+		<meta name="description" content="Big Data Mining Research Group" />
+		<meta name="keywords" content="CIKM2018" />
+		<meta name="Resource-type" content="Document" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="./CIKM 2018_files/css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./CIKM 2018_files/jquery.fullPage.css">
+		<link rel="stylesheet" type="text/css" href="./CIKM 2018_files/examples.css">
+		<link rel="stylesheet" type="text/css" href="./CIKM 2018_files/index.css">
+		<link rel="stylesheet" type="text/css" href="./CIKM 2018_files/overlay.css">
+		<script src="./CIKM 2018_files/jquery.min.js"></script>
+		<script src="./CIKM 2018_files/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="./CIKM 2018_files/scrolloverflow.js"></script>
+		<script type="text/javascript" src="./CIKM 2018_files/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="./CIKM 2018_files/examples.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					'navigation': true,
+					'navigationPosition': 'right',
+					'navigationTooltips': ['Index', 'Introduction', 'Publication', 'People', 'Organizers', 'Photos', 'Contact'],
+					anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage', '6thpage', 'lastPage'],
+					menu: '#menu',
+					scrollOverflow: true,
+					scrollOverflowOptions: {
+						scrollbars: true,
+						mouseWheel: true,
+						hideScrollbars: false,
+						fadeScrollbars: false,
+						disableMouse: true
+					},
+
+
+					'afterLoad': function(anchorLink, index){
+						if(index == 1){
+							$('.logo, .logo2').removeClass('current');
+						}
+						else{
+
+							$('.logo, .logo2').addClass('current');
+						}
+
+						if(index == 2){
+							$('.newsctn').addClass('current');
+						}
+
+
+					}
+
+				});
+
+
+				(function blink() {
+					$('#flicker').fadeOut(500).fadeIn(500, blink); 
+				});
+
+			});
+
+		</script>
+	</head>
+	<body class="index">
+		<ul id="menu">
+			<div style="float:right; font-size:30px;cursor:pointer; padding:20px; background-color:#f9ba13; color:#ffffff" onclick="openNav()">&#9776;</div>
+		</ul>
+
+		<div id="myNav" class="overlay"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<ul>
+					<li><a href="#">Home</a>
+						<ul>
+							<li><a href="#secondPage" onclick="closeNav()">Introduction</a></li>
+							<li><a href="#3rdPage" onclick="closeNav()">Publication</a></li>
+							<li><a href="#4thpage" onclick="closeNav()">People</a></li>
+							<li><a href="#5thpage" onclick="closeNav()">Projects</a></li>
+							<li><a href="#6thpage" onclick="closeNav()">Photos</a></li>
+						</ul>
+					</li>
+					<li class="title">Organizations
+						<ul>
+							<li><a href="http://sw.hanyang.ac.kr/">Division of Computer Science</a></li>
+							<li><a href="http://computing.hanyang.ac.kr/">College of Computing</a></li>
+							<li><a href="http://www.hanyang.ac.kr/">Hanyang University</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="fullpage">
+
+			<!------------------------------------------- section 0 ----------------------------------------------->
+			<div class="section" id="section0">
+				<div class="contain">
+					<div class="downloadleaflet">
+						<a href="files/bigdatalab-leaflet.pdf" target="_blank" title="leaflet"><img src="images/downloadleaflet.gif" height="200"/></a> </div>
+					<div class="padding">
+						<h1>Big Data Mining Research Group</h1>
+						<div class="hpcol hpcol5"> <h3>College of Computing,<br/> Hanyang University at Ansan</h3>
+						</div>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+					</div>
+					<div class="hpfooter">
+						<div class="padding">
+							<div class="left"> <br /> Copyright © CIKM2018. All Rights for HTML/CSS and Javascripts Reserved. </div>
+							<div class="clearboth"></div>
+						</div>
+					</div>
+					<div class="arrow"><a href="#secondPage" class="moveSectionDown"></a></div>
+					<div class="spacergeneral"></div>
+				</div>
+			</div>
+
+			<!------------------------------------------- section 1 ------------------------------------------->
+			<div class="section moveDown" id="section7">
+				<div class="intro">
+					<div class="padding40">
+						<h1 style="color:black;">Introduction</h1>
+						<p>빅데이터 연구실은 실용적 어플리케이션 연구에 초점을 맞추어 Twitter, Facebook, IMDB, Yelp 등 다양한 소셜 미디어에서 수집되는 대규모 다형성(heterogeneous) 데이터를 연구합니다. 예를 들어, 트위터의 그래프 형태의 소셜 네트워크 관계와 텍스트 형태의 메시지(micro-blogging), GPS 위치정보 등 서로 성질이 다른 다양한 데이터 형태로부터 클러스터링, 패턴 마이닝, 추천 시스템 등을 개발합니다. 현재는 인간 행동(human behavior)의 패턴을 분석하여 트위터의 텍스트와 GPS 위치정보를 통해 여행자의 경로 패턴을 찾거나 Q&amp;A서비스의 데이터 분석을 통해 분야별 전문가 찾기와 같은 연구를 수행하고 있습니다. 연구에 활용되는 기반 기술로서 MapReduce를 이용한 병렬컴퓨팅, 데이터마이닝 기법, 데이터 베이스, 자연어처리, 머신 러닝과 딥러닝 등을 폭 넓게 학습합니다.
+						<br />
+						<br />
+
+						We study real data mining problems in social media such as Twitter, Facebook, IMDB and Yelp. We focus on developing clustering, pattern mining and recommendation algorithms by analyzing big heterogenous data with various types including micro-blog message, GPS location and friend relationship. In this research direction, our group has been investigated the discovery of interesting and useful patterns in human behavior such as traveling trajectory patterns from geo-tagged Twitter messages and expert detection by analyzing Q&amp;A dialogues collected from Stack Overflow. We expect our members to: Develop sufficient expertise in recent knowledge mining techniques and Become skillful in managing big data with various data processing models such as MapReduce frameworks and NoSQLs.</p>
+						<div class="arrow"><a href="#3rdPage" class="moveSectionDown"></a></div>
+					</div>
+				</div>
+			</div>
+
+			<!------------------------------------------- section 2 ------------------------------------------->
+			<div class="section moveDown" id="section1">
+
+				<div class="newsctn">
+					<h1>Publication</h1>
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">C</div>
+								<div class="keymonth">EMBC<br />2018</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>Interactive Sleep Stage Labelling Tool For Diagnosing Sleep Disorder Using Deep Learning<br/>Woonghee Lee, Younghoon Kim</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">C</div>
+								<div class="keymonth">EMBC<br />2018</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>Classification of Heart Diseases Based On ECG Signals Using Long Short-Term Memory<br/>Ming Liu, Younghoon Kim</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">C</div>
+								<div class="keymonth">EMBC<br />2017</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>ActiveMotif: Interactive motif discovery with human feedback <br/>Younghoon Kim, Woonghee Lee, Keonwoo Kim</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">J</div>
+								<div class="keymonth">Inf. Syst.<br />2017</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>Latent ranking analysis using pairwise comparisons in crowdsourcing platforms<br/>Younghoon Kim, Wooyeol Kim, Kyuseok Shim</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">J</div>
+								<div class="keymonth">Inf. Sci.<br />2017</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>Integration of graphs from different data sources using crowdsourcing<br/>Younghoon Kim, Woohwan Jung, Kyuseok Shim</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">J</div>
+								<div class="keymonth">J. Med. Syst.<br />2017</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>Cascade Classification with Adaptive Feature Extraction for Arrhythmia Detection<br/>Juyoung Park, Mingon Kang, Jean Gao, Younghoon Kim, Kyungtae Kang</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">C</div>
+								<div class="keymonth">NSDI<br />2017</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>ViewMap: Sharing Private In-Vehicle Dashcam Videos<br/>Minho Kim, Jaemin Lim, Hyunwoo Yu, Kiyeon Kim, Younghoon Kim, Suk-Bok Lee</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">C</div>
+								<div class="keymonth">IEEE BigData<br />2016</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>Parallel computation of k-nearest neighbor joins using MapReduce<br/>Wooyeol Kim, Younghoon Kim, Kyuseok Shim</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">C</div>
+								<div class="keymonth">KDD<br />2015</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>TOPTRAC: Topical Trajectory Pattern Mining<br/>Younghoon Kim, Jiawei Han, Cangzhou Yuan</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">J</div>
+								<div class="keymonth">Inf. Syst.<br />2014</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>DBCURE-MR: An efficient density-based clustering algorithm for large data using MapReduce<br/>Younghoon Kim, Kyuseok Shim, Min-Soeng Kim, June Sup Lee</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">J</div>
+								<div class="keymonth">Inf. Syst.<br />2014</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>TWILITE: A recommendation system for Twitter using a probabilistic model based on latent Dirichlet allocation<br/>Younghoon Kim, Kyuseok Shim</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">C</div>
+								<div class="keymonth">ICDM<br />2014</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>Latent Ranking Analysis Using Pairwise Comparisons<br/>Younghoon Kim, Wooyeol Kim, Kyuseok Shim</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">J</div>
+								<div class="keymonth">Inf. Sci.<br />2013</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>Efficient processing of substring match queries with inverted variable-length gram indexes<br/>Younghoon Kim, Hyoungmin Park, Kyuseok Shim, Kyoung-Gu Woo</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">C</div>
+								<div class="keymonth">SIGMOD<br />2013</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>Efficient top-k algorithms for approximate substring matching<br/>Younghoon Kim, Kyuseok Shim</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+					<!-- keyctn -->
+					<div class="keyctn">
+						<a href="#">
+							<div class="keyleft">
+								<div class="keydate">C</div>
+								<div class="keymonth">WWW<br />2013</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyright">
+								<div class="keyrightctn"><span>DIGTOBI: a recommendation system for Digg articles using probabilistic modeling<br/>Younghoon Kim, Yoonjae Park, Kyuseok Shim</span></div>
+							</div>
+							<div class="clearboth"></div>
+						</a> 
+					</div>
+
+					<!-- page down arrow -->
+					<div class="arrow"><a href="#4thpage" class="moveSectionDown"></a></div>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+
+				</div>
+			</div>
+
+			<!------------------------------------------- section 3 ------------------------------------------->
+			<div class="section" id="section3">
+				<div class="padding4020">
+					<h1>People</h1>
+
+					<div class="hpkeydates first">
+						<h2>Professor</h2>
+						<div class="keymainctn">
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="membername">Younghoon<br/>Kim</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="memberpic"> <img src="members/yhkim.jpg" /></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<!-- Organizer -->
+							<div class="keyctn">
+								<div class="keyctn">
+									<div class="keyleft">
+										<div class="keymonth">E-mail</div>
+										<div class="clearboth"></div>
+									</div>
+									<div class="keyright">
+										<div class="keyrightctn"><span>nongaussian@hanyang.ac.kr</span></div>
+									</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyleft">
+									<div class="keymonth">Topics</div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn">
+										Data minng with deep learning,
+										Social network service analysis,
+										Information retrieval,
+										Text mining,
+										Recommendation system,
+										Crowdsourcing<br/>
+									</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyleft">
+									<div class="keymonth">Education &amp; Research Experience</div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn">
+										<ul>
+											<li>UNIV. OF ILLINOIS AT URBANA-CHAMPAIGN (UIUC), Illinois, US Postdoctoral researcher, (Feb. 2014 ~ Aug. 2014)</li>
+											<li>SEOUL NATIONAL UNIV., Seoul, Korea Postdoctoral researcher, (Mar. 2013 ~ Jan. 2014)</li>
+											<li>SEOUL NATIONAL UNIV., Seoul, Korea Ph.D. in Electrical Engineering and Computer Science (Mar. 2007 ~ Feb. 2013): Dissertation: “Similarity Query Processing Techniques for Text Data” </li>
+											<li>SEOUL NATIONAL UNIV., Seoul, Korea Bachelor of Science in Computer Science &amp; Engineering (Mar. 1998 ~ Feb. 2006)</li>
+										</ul>
+									</div>
+									<div class="clearboth"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- hpkeydates -->
+					<div class="hpkeydates">
+						<h2>Ph.D Program</h2>
+						<div class="keymainctn">
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="membername">Woonghee<br />Lee</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="memberpic"> <a href="https://github.com/WoongheeLee" target=_blank><img src="members/Woongheelee_small.jpg" /></a></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<!-- Organizer -->
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="keymonth">E-mail</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn"><span>woongheelee@hanyang.ac.kr</span></div>
+								</div>
+								<div class="clearboth"></div>
+							</div><div class="keyctn">
+								<div class="keyleft">
+									<div class="keymonth">Topics</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn"><span>Interactive machine learning, time series analysis, social network analysis</span></div>
+								</div>
+							</div>
+							<br />
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="membername">Keonwoo<br />Kim</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="memberpic"> <img src="members/kwkim.jpeg" /></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<!-- Organizer -->
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="keymonth">E-mail</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn"><span>kdbml314@gmail.com</span></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="keymonth">Topics</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn"><span>Spatial data analysis, time series analysis</span></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+
+							<br />
+							<br />
+						</div>
+					</div>
+
+					<!-- hpkeydates -->
+					<div class="hpkeydates">
+						<h2>MS Program</h2>
+						<div class="keymainctn">
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="membername">Junsep<br />Park</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="memberpic"> <img src="members/jspark.jpg" /></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<!-- Organizer -->
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="keymonth">E-mail</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn"><span>mrfaith@hanyang.ac.kr</span></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="keymonth">Topics</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn"><span>SNS, NLP, deep learning</span></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<br />
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="membername">Jinhee<br />Kim</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="memberpic"> <img src="members/Jini.png" /></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<!-- Organizer -->
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="keymonth">E-mail</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn"><span>wlsl5378@naver.com</span></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="keymonth">Topics</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn"><span>deep learning, interactive machine learning, crowdsourcing</span></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<br />
+
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="membername">Youngjin<br />Kim</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="memberpic"> <img src="members/Youngjin_kim.jpg" /></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<!-- Organizer -->
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="keymonth">E-mail</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn"><span>kyj7479@naver.com</span></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="keymonth">Topics</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn"><span>Parallel computing, similarity join</span></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<br />
+
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="membername">Jongwoo<br />Kim</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="memberpic"> <img src="members/kjw.jpg" /></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<!-- Organizer -->
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="keymonth">E-mail</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn"><span>kjwspecial@naver.com</span></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="keymonth">Topics</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="keyrightctn"><span>Deep learning, recommendation system</span></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<br />
+							<br />
+						</div>
+					</div>
+
+					<!-- hpkeydates -->
+					<div class="hpkeydates">
+						<br /> <br /> <br />
+						<div class="keymainctn">
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="membername">Seungmin<br />lee</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="memberpic"> <img src="members/leesm.jpg" /></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<br /> <br /> <br />
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="membername">Ming<br/>Liu</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="memberpic"> <img src="members/liu.jpg" /></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+
+							<br />
+							<br />
+						</div>
+					</div>
+					<div class="hpkeydates">
+						<h2>Alumni</h2>
+
+						<div class="keymainctn">
+
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="membername">Ickchae<br />Na</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="memberpic"> <img src="members/naic.jpg" /></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+
+							<br />
+							<br />
+						</div>
+					</div>
+					<div class="hpkeydates">
+						<div class="keymainctn">
+							<br /> <br /> <br />
+							<div class="keyctn">
+								<div class="keyleft">
+									<div class="membername">Moonjong<br />Jang</div>
+									<div class="clearboth"></div>
+								</div>
+								<div class="keyright">
+									<div class="memberpic"> <img src="members/jmj.jpg" /></div>
+								</div>
+								<div class="clearboth"></div>
+							</div>
+
+
+							<br />
+							<br />
+						</div>
+					</div>
+
+
+					<!-- hpkeydates -->
+					<div class="clearboth"></div>
+					<div class="arrow"><a href="#5thpage" class="moveSectionDown"></a></div>
+					<br />
+					<br />
+					<br />
+					<br />
+				</div>
+			</div>
+
+			<!------------------------------------------- section 4 ------------------------------------------->
+			<div class="section" id="section2">
+				<div class="intro2">
+					<div class="profileall">
+						<!-- Organizer -->
+						<h1>Projects</h1>
+						<div class="profilectn"> <img src="images/bk21.png" />
+						</div>
+						<div class="profilectn"> <img src="images/samsung.png" />
+						</div>
+						<div class="profilectn"> <img src="images/ketep.png" />
+						</div>
+						<!-- Organizer --> 
+					</div>
+					<div class="arrow"><a href="#6thpage" class="moveSectionDown"></a></div>
+					<div class="yellowbg"></div>
+				</div>
+			</div>
+
+			<!------------------------------------------- section 5 ------------------------------------------->
+			<div class="section" id="section8">
+				<div class="profileall">
+					<br/>
+					<h1>Photos</h1>
+					<div class="keymainctn">
+						<div class="keyctn">
+									<img src="photos/450px-Riding_20181010_4.jpg" height="300" />
+									<img src="photos/800px-Riding_20181010_1.jpg" height="300" />
+									<img src="photos/450px-KakaoTalk_Photo_2018-10-05-16-39-17.jpeg" height="300" />
+									<img src="photos/800px-KakaoTalk_Photo_2018-10-05-16-39-18.jpeg" height="300" />
+									<img src="photos/400px-1529595052091.jpg" height="300"/>
+									<img src="photos/400px-1529594989319.jpg" height="300"/>
+									<img src="photos/450px-Gpvc_2018_1.jpg" height="300"/>
+									<img src="photos/450px-Kdbc_2017_photo_1.jpg" height="300"/>
+									<img src="photos/450px-IMG_20170805_131437.jpg"  height="300"/>
+									<img src="photos/450px-KakaoTalk_20170724_083303240.jpg"  height="300"/>
+									<img src="photos/450px-20060520_050043500_iOS.jpg" height="300" />
+						</div>
+						<div class="clearboth"></div>
+					</div> 
+					<div class="arrow"><a href="#lastPage" class="moveSectionDown"></a></div>
+				</div>
+			</div>
+
+			<!------------------------------------------- section 6 ------------------------------------------->
+			<div class="section moveDown" id="section6">
+				<div class="footer">
+					<div class="maincol maincol10">
+						<div class="footer_fb">
+							<h3>Contact us</h3>
+							<div class="padding40"><span>[Address]<br/>
+									55, Hanyangdaehak-ro, Sangnok-gu, Ansan-si, Gyeonggi-do, Korea.<br/>
+									경기도 안산시 상록구 55 한양대학로 제4공학관 317호(교수연구실), 314호(빅데이터마이닝연구실)</span>
+							</div>
+							<iframe src="https://maps.google.com/?ll=37.297057%2C126.836444&amp;spn=0.002612%2C0.00751&amp;ie=UTF8&amp;z=17&amp;t=roadmap&amp;sll=37.297057%2C126.836444&amp;sspn=0.002612%2C0.00751&amp;q=37.296699%2C126.836386%20(Untitled%20Location)&amp;output=embed" title="Untitled Location" width="100%" height="300" frameborder="0" class="map_embed" scrolling="no"></iframe>
+						</div>
+						<div class="clearboth"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script>
+			function openNav() {
+				document.getElementById("myNav").style.height = "100%";
+			}
+
+			function closeNav() {
+				document.getElementById("myNav").style.height = "0%";
+			}
+		</script>
+	</body>
+</html>

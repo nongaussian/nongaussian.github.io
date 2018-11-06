@@ -324,7 +324,7 @@ margin:0;
 
 .contain{
 	position: relative;
-	margin-top: 160px;
+	margin-top: 120px;
 }
 
 .contain .padding{
@@ -497,7 +497,7 @@ hr{ height:1px; width:80%; border:0; background-color:#aeaeae; margin:20px auto 
 
 .memberpic{
 	display:inline-block;
-	width:55%;
+	width:60%;
 	padding:5px;
 	background-color:#ffffff;
 	max-width:420px;
@@ -564,7 +564,7 @@ hr{ height:1px; width:80%; border:0; background-color:#aeaeae; margin:20px auto 
 .hpkeydates{
 	width:23%;
 	margin: 1% 3% 1% 0;
-	padding:30px 0 0 0;
+	padding: 20px 0 0 0;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -602,16 +602,7 @@ hr{ height:1px; width:80%; border:0; background-color:#aeaeae; margin:20px auto 
 }
 
 .newsctn{
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	margin:auto auto;
-	height: 80%;
-	max-width: 1000px;
-	width:100%;
-	opacity: 0;
+	padding:20px;
 }
 
 .current{
@@ -1050,6 +1041,12 @@ animation: mymove 3s infinite;
 #fp-nav ul li a span, 
 .fp-slidesNav ul li a span{
 	background-color:#ffba00;
+}
+
+.downloadleaflet{
+	position:absolute;
+	top:150px;
+	left:15px;
 }
 
 .footer{
