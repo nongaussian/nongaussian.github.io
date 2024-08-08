@@ -798,7 +798,7 @@ width:43px;
 height:23px;
 margin:30px auto 0 auto;
 z-index:200;
-background-image:url(http://www.cikm2018.units.it/images/arrowdown.png);
+background-image:url(./images/arrowdown.png);
 position:relative;
 animation:mymove 1s ease-out forwards;
 -webkit-animation: mymove 5s infinite;
